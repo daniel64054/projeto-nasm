@@ -6,8 +6,8 @@ _start:
   mov ecx,msg               ;mensagen de texto para exibir
   mov ebx,1                 ;descritor de arquivo
   mov eax,4                 ;chamada para escrever o texto na tela
-  int -x80                  ;chama o terminal para exibir o texto
+  int 0x80                  ;chama o terminal para exibir o texto
 
   section .data             ;seçao de dados 
-  msg db 'hello, world!'     :mensagenqe deve aparecer
+  msg db 'hello, world!'     ;mensagenqe deve aparecernasm
   len equ $ - msg             ;obtem a quantidade de caracteres da mensagen
