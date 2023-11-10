@@ -11,3 +11,4 @@ _start:
   section .data             ;seçao de dados 
   msg db 'hello, world!'     ;mensagenqe deve aparecernasm
   len equ $ - msg             ;obtem a quantidade de caracteres da mensagen
+  
